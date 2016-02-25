@@ -1,0 +1,38 @@
+.. _upgrade-to-3.1.4:
+
+########################################
+3.1.4 release notes - Unreleased - Draft
+########################################
+
+*******************
+What's new in 3.1.4
+*******************
+
+Bug Fixes
+=========
+
+* Fix use structure migration
+* Fix fix-tree command
+* Remove some warning for Django 1.9
+* Fix using scroll bar of plugin menu in Firefox & IE moves plugins
+* Fix JS error when using PageSelectWidget
+* Fix whitespace markup issues in draft mode
+* Detect plugin migrations layout in tests
+* Fix some treebeard corruption issues
+
+
+Treebeard corruptions
+=====================
+
+Prior to 3.1.4 deleting pages may lead to some non-fatal tree
+corruptions when results in error 500 when publishing, deleting,
+moving pages.
+To fix these issues, upgrade to 3.1.4 and then executes
+``manage.py cms fix-tree`` command to restore the correct data.
+
+
+
+Thanks
+======
+
+TBD
